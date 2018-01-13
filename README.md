@@ -1,0 +1,1 @@
+# navitiasdk-typescript
