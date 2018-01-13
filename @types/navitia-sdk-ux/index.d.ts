@@ -12,16 +12,28 @@ declare module "navitia-sdk-ux" {
         token: string;
     }
 
+    export enum DatetimeRepresents {
+        DEPARTURE = 'departure',
+        ARRIVAL = 'arrival'
+    }
+
+    export enum SectionMode {
+        WALKING = 'walking',
+        BIKE = 'bike',
+        CAR = 'car',
+        BSS = 'bss'
+    }
+
     export class JourneysUXParameters {
         originId: string;
         destinationId: string;
         originLabel?: string;
         destinationLabel?: string;
         datetime?: string;
-        datetimeRepresents?: string;
+        datetimeRepresents?: DatetimeRepresents;
         forbiddenUris?: Array<string>;
-        firstSectionModes?: Array<string>;
-        lastSectionModes?: Array<string>;
+        firstSectionModes?: Array<SectionMode>;
+        lastSectionModes?: Array<SectionMode>;
         count?: number;
         minNbJourneys?: number;
         maxNbJourneys?: number;
