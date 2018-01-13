@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "postinstall": "npm install node_modules/navitiasdk-typescript/@types/navitia-sdk && npm install node_modules/navitiasdk-typescript/@types/navitia-sdk-ux"
-  }
+    "postinstall": "npm install ./node_modules/navitiasdk-typescript/@types/navitia-sdk && npm install ./node_modules/navitiasdk-typescript/@types/navitia-sdk-ux"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CanalTP/navitiasdk-typescript.git"
