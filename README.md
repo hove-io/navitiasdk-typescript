@@ -16,5 +16,6 @@ And add the types folder in your tsconfig.json :
 ## How to use
 Add this Typescript definition reference at the header of your ts file
 ```
-
+///<reference types="navitia-sdk"/>
+///<reference types="navitia-sdk-ux"/>
 ```
