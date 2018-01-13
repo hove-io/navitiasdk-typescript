@@ -30,10 +30,10 @@ declare module "navitia-sdk-ux" {
         originLabel?: string;
         destinationLabel?: string;
         datetime?: string;
-        datetimeRepresents?: DatetimeRepresents;
+        datetimeRepresents?: 'departure' | 'arrival';
         forbiddenUris?: Array<string>;
-        firstSectionModes?: Array<SectionMode>;
-        lastSectionModes?: Array<SectionMode>;
+        firstSectionModes?: Array<'walking' | 'bike' | 'car' | 'bss'>;
+        lastSectionModes?: Array<'walking' | 'bike' | 'car' | 'bss'>;
         count?: number;
         minNbJourneys?: number;
         maxNbJourneys?: number;
