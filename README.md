@@ -7,17 +7,11 @@ npm install https://github.com/CanalTP/navitiasdk-typescript
 And add the types folder in your tsconfig.json :
 ```
 {
-  ...,
   "compilerOptions": {
-    ...,
     "typeRoots": [
-      ...,
       "node_modules/navitiasdk-typescript/@types",
-      ...
-    ],
-    ...
-  },
-  ...
+    ]
+  }
 }  
 ```
 
