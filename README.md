@@ -9,7 +9,7 @@ And add the types folder in your tsconfig.json :
 {
   "compilerOptions": {
     "typeRoots": [
-      "node_modules/navitiasdk-typescript/@types",
+      "node_modules/navitiasdk-typescript/@types"
     ]
   }
 }  
