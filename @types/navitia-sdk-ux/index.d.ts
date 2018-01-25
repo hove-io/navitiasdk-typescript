@@ -4,8 +4,8 @@
 
 declare module "navitia-sdk-ux" {
     export class NavitiaSDKUXApi {
-        init(token: NavitiaSDKUXConfiguration): void;
-        invokeJourneyResults(journeyParams: JourneysUXParameters, success: () => void, error: (error: string) => void): void;
+        init(configuration: NavitiaSDKUXConfiguration, success?: () => void, error?: (errorMessage: string) => void): void;
+        invokeJourneyResults(journeyParams: JourneysUXParameters, success: () => void, error: (errorMessage: string) => void): void;
     }
 
     export class NavitiaSDKUXConfiguration {
