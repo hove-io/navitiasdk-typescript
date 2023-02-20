@@ -382,6 +382,7 @@ declare module "navitia-sdk" {
 
     export class ImpactedSection {
         to: PtObject;
+        routes: Array<Route>;
         from: PtObject;
     }
 
